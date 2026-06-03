@@ -252,13 +252,66 @@ TextField(
 
 TextField(
   decoration: InputDecoration(
-    labelText: "Requisitos",
+    labelText: "Requisitos",const SizedBox(height: 20),
+
+ElevatedButton(
+  onPressed: () {},
+  child: const Text("Pesquisar"),
+),
+  ),const SizedBox(height: 20),
+
+Card(
+  child: ListTile(
+    leading: Icon(Icons.person),
+    title: Text("João - Carpinteiro"),
+    subtitle: Text("Maputo • 5 anos de experiência"),
+    trailing: ElevatedButton(
+      onPressed: () {},
+      child: Text("Convocar"),
+    ),
   ),
+),
+
+Card(
+  child: ListTile(
+    leading: Icon(Icons.person),
+    title: Text("Carlos - Eletricista"),
+    subtitle: Text("Beira • 3 anos de experiência"),
+    trailing: ElevatedButton(
+      onPressed: () {},
+      child: Text("Convocar"),
+    ),
+  ),
+),
 ),const SizedBox(height: 20),
 
 ElevatedButton(
   onPressed: () {},
   child: const Text("Publicar Vaga"),
+),const SizedBox(height: 30),
+
+Text(
+  "Pesquisar Candidatos",
+  style: TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  ),
+),TextField(
+  decoration: InputDecoration(
+    labelText: "Profissão",
+  ),
+),
+
+TextField(
+  decoration: InputDecoration(
+    labelText: "Província",
+  ),
+),
+
+TextField(
+  decoration: InputDecoration(
+    labelText: "Experiência",
+  ),
 ),
             ),
           ],
