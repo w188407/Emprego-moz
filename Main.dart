@@ -224,7 +224,42 @@ class CompanyPage extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 labelText: "Email",
-              ),
+              ),const SizedBox(height: 20),
+
+TextField(
+  decoration: InputDecoration(
+    labelText: "Título da Vaga",
+  ),
+),
+
+TextField(
+  decoration: InputDecoration(
+    labelText: "Categoria",
+  ),
+),
+
+TextField(
+  decoration: InputDecoration(
+    labelText: "Província",
+  ),
+),
+
+TextField(
+  decoration: InputDecoration(
+    labelText: "Salário",
+  ),
+),
+
+TextField(
+  decoration: InputDecoration(
+    labelText: "Requisitos",
+  ),
+),const SizedBox(height: 20),
+
+ElevatedButton(
+  onPressed: () {},
+  child: const Text("Publicar Vaga"),
+),
             ),
           ],
         ),
