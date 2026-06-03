@@ -172,7 +172,25 @@ class CandidatePage extends StatelessWidget {
             TextField(
               decoration: InputDecoration(
                 labelText: "Experiência",
-              ),
+              ),const SizedBox(height: 30),
+
+Text(
+  "Minhas Convocações",
+  style: TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  ),
+),
+
+Card(
+  child: ListTile(
+    leading: Icon(Icons.mail),
+    title: Text("ABC Construções"),
+    subtitle: Text(
+      "Entrevista • 15/06/2026 • 09:00",
+    ),
+  ),
+),
             ),
           ],
         ),
