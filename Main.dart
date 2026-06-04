@@ -68,7 +68,9 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  child: const Text("Sou Candidato"),
+                 style: ElevatedButton.styleFrom(
+                   padding: const EdgeInsets.all(18),), 
+                child: const Text("Sou Candidato"),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -84,7 +86,9 @@ class HomePage extends StatelessWidget {
 
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(
+                child: ElevatedButton(style: ElevatedButton.styleFrom(
+  padding: const EdgeInsets.all(18),
+),
                   child: const Text("Sou Empresa"),
                   onPressed: () {
                     Navigator.push(
@@ -102,7 +106,10 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  child: const Text("Administrador"),
+                  style: ElevatedButton.styleFrom(
+   padding: const EdgeInsets.all(18),
+),
+                 child: const Text("Administrador"),
                   onPressed: () {
                     Navigator.push(
                       context,
