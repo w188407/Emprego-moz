@@ -70,7 +70,9 @@ class HomePage extends StatelessWidget {
                 child: ElevatedButton(
                  style: ElevatedButton.styleFrom(
                    padding: const EdgeInsets.all(18),), 
-                child: const Text("Sou Candidato"),
+                child: const Text(
+  "👤 Sou Candidato",
+),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -89,7 +91,9 @@ class HomePage extends StatelessWidget {
                 child: ElevatedButton(style: ElevatedButton.styleFrom(
   padding: const EdgeInsets.all(18),
 ),
-                  child: const Text("Sou Empresa"),
+                  child: const Text(
+  "🏢 Sou Empresa",
+),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -108,8 +112,10 @@ class HomePage extends StatelessWidget {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
    padding: const EdgeInsets.all(18),
+),child: const Text(
+  "👑 Admin",
 ),
-                 child: const Text("Administrador"),
+                 
                   onPressed: () {
                     Navigator.push(
                       context,
